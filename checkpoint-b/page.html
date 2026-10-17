@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus Store</title>
+    <link rel="stylesheet" href="page.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1>Campus Store</h1>
+
+      <ul id="list"></ul>
+
+      <button id="apply" type="button">Apply filter</button>
+    </main>
+
+<script type="module" src="page.js"></script>
+<script>
+  window.addEventListener("load", () => {
+    import("./page.js").then((module) => module.start());
+  });
+</script>
+  </body>
+</html>
+
